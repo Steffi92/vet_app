@@ -18,7 +18,7 @@ const consultaSchema = new mongoose.Schema({
         type: String,
         require: true
     }
-})
+}, {versionKey: false})
 
 const consultaModel = mongoose.model("consulta", consultaSchema)
 

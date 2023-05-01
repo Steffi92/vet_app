@@ -18,7 +18,7 @@ const mascotaSchema = new mongoose.Schema({
         type: String,
         require: true
     }
-})
+}, {versionKey: false})
 
 const mascotamodel = mongoose.model("mascota", mascotaSchema)
 
